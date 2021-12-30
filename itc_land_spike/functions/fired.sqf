@@ -4,6 +4,9 @@
 
 params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
 //player addmagazine _magazine;
+private _unit = player;
+If (_unit != ACE_Player) exitWith{};
+
 itc_land_spike_currentMissile = _projectile;
 itc_land_spike_launchTime = cba_missionTime;
 itc_land_spike_activationTime = cba_missionTime;
