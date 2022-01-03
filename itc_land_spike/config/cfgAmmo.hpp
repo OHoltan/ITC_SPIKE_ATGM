@@ -44,12 +44,12 @@ class CfgAmmo {
     timeToLive = 40;
     // Turn off arma crosshair-guidance
     manualControl = 0;
-    explosionEffects = "GrenadeExplosion";
+    explosionEffects = "HEShellExplosion";
     warheadName = HE;
 
-    hit = 250;         // default: 800
-    indirectHit = 150;
-    indirectHitRange = 7;
+    hit = 100;         // default: 800
+    indirectHit = 80;
+    indirectHitRange = 10;
     // ACE uses these values
     //trackOversteer = 1;
     //trackLead = 0;
