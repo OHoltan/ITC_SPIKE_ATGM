@@ -14,7 +14,7 @@ class CfgWeapons {
     //hiddenSelectionsTextures[] = {"A3\Weapons_F_Beta\Launchers\Titan\Data\Launcher_CO.paa","A3\Weapons_F_Beta\Launchers\Titan\Data\TubeL_CO.paa"};
     picture = "\A3\Weapons_F_Enoch\Launchers\Titan\Data\UI\icon_launch_B_Titan_olive_F_ca.paa";
 	hiddenSelectionsTextures[] = { "\a3\weapons_f_beta\launchers\titan\data\launcher_indp_co.paa","\A3\Weapons_F_Enoch\Launchers\Titan\Data\launch_B_Titan_olive_F_02_co.paa" };
-    magazines[] = {"itc_land_spikeLR_1rnd"};
+    magazines[] = {"itc_land_spikeLR_1rnd","itc_land_spikeLR_HE_1rnd"};
     magazineWell[] = {};
     class EventHandlers {
         class itc_land_spike {
