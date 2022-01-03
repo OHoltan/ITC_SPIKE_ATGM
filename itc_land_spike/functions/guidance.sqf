@@ -1,6 +1,9 @@
 /*
  * itc_land_spike_fnc_fired
  */
+
+private _unit = player;
+If (_unit != ACE_Player) exitWith{};
 params ["_seekerTargetPos", "_args", "_attackProfileStateParams"];
 _args params ["_firedEH"];
 _firedEH params ["_shooter","","","","","","_projectile"];

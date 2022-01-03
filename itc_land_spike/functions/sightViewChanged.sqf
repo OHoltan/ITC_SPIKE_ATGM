@@ -3,6 +3,8 @@
  */
 
 //systemChat str ["VIEW CHANGED", cameraView];
+private _unit = player;
+If (_unit != ACE_Player) exitWith{};
 
 if (cameraView != "GUNNER" && isNil "itc_land_spike_camera") exitWith {
   [] call itc_land_spike_fnc_sightClosed;

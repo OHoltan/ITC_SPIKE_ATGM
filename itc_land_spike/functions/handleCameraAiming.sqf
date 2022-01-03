@@ -1,6 +1,9 @@
 /*
  * itc_land_spike_fnc_handleCameraAiming
  */
+ 
+private _unit = player;
+If (_unit != ACE_Player) exitWith{};
 private _traverse = ((-(inputAction "AimLeft")) + (inputAction "AimRight")) * itc_land_spike_traverseModifier;
 private _elevate = ((inputAction "AimUp") + (-(inputAction "AimDown"))) * itc_land_spike_traverseModifier;
 setMousePosition [5,5];

@@ -1,3 +1,5 @@
+private _unit = player;
+If (_unit != ACE_Player) exitWith{};
 params ["_display"];
 private _group = _display displayCtrl 170;
 private _boxHidePosition = if (((call CBA_fnc_getFOV) # 0) > 0.1) then [{[22 * (safezoneW / 64),10 * 	(safezoneH / 40)]}, {[-1,-1]}];

@@ -1,3 +1,5 @@
+private _unit = player;
+If (_unit != ACE_Player) exitWith{};
 itc_land_spike_camera = "camera" camCreate (getPos _projectile);
 itc_land_spike_camera camSetFov 0.08333;
 

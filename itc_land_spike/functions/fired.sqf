@@ -2,10 +2,13 @@
  * itc_land_spike_fnc_fired
  */
 
-params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
+params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner", "_shooter"];
 //player addmagazine _magazine;
 private _unit = player;
 If (_unit != ACE_Player) exitWith{};
+
+//private _unit = player;
+//if ( !isPlayer _shooter ) exitWith {};
 
 itc_land_spike_currentMissile = _projectile;
 itc_land_spike_launchTime = cba_missionTime;
@@ -22,6 +25,5 @@ if (!isNil "_intersect" && {(_intersect distance _unit) > 500}) then {
 	itc_land_spike_targetPosCamera = _forward;
 };
 
-//private _unit = player;
 [] call itc_land_spike_fnc_startCamera;
 [] call itc_land_spike_fnc_missile;

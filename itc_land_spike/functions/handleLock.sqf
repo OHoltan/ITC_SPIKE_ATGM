@@ -2,6 +2,7 @@
  * itc_land_spike_fnc_handleLock
  */
 
+If (_unit != ACE_Player) exitWith{};
 private _viewASL = AGLtoASL positionCameraToWorld [0,0,0];
 private _viewDir = _viewASL vectorFromTo (AGLtoASL positionCameraToWorld [0,0,1]);
 itc_land_spike_lockInformation params ["_lockObject", "_lockPosition", "_lockLostTime", "_originalLockPosition"];
