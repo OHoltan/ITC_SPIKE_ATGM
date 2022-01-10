@@ -2,7 +2,16 @@
  * itc_land_spike_fnc_selectSpike
  */
 
-params ["_display"];
+params ["_display","_unit"];
+private _unit = player;
+private _uid = getPlayerUID player;
+private _myNetworkId = clientOwner;
+
+//if (!hasInterface) exitWith{};
+If (_shooter != ACE_Player) exitWith{};
+if (!isPlayer _shooter) exitWith {};
+If (_unit != ACE_Player) exitWith{};
+if (_uid != getPlayerUID player) exitWith {};
 
 [{
   (_this select 0) params ["_display"];
