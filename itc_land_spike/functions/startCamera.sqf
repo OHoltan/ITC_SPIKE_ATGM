@@ -8,6 +8,8 @@ if (!isPlayer _shooter) exitWith {};
 If (_unit != ACE_Player) exitWith{};
 if (_uid != getPlayerUID player) exitWith {};
 //If (!isPlayer Spike1) exitWith{};
+if !(local (_this select 7)) exitWith {};
+if (player!=(_this select 7)) exitWith {};
 
 
 itc_land_spike_camera = "camera" camCreate (getPos _projectile);
@@ -21,5 +23,6 @@ itc_land_spike_camera setDir (_polarToTarget # 1);
 itc_land_spike_camera setVectorUP [0,0.5,0];
 //itc_land_spike_camera attachTo [itc_land_spike_currentMissile, [0,1,0]];
 itc_land_spike_camera cameraEffect ["internal", "BACK"];
+disableserialization;
 findDisplay 46 createDisplay  "ITC_Land_SpikeSeeker";
 showCinemaBorder false;
